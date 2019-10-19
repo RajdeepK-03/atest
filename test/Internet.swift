@@ -14,8 +14,16 @@ class Internet: Bill
     
     init(providerName: String, internetGBused: Float, bId: Int, bDate: Date, billType: String, totalBillAmount: Float)
     {
-        super.init(bId: <#T##Int#>, bDate: <#T##Date#>, billType: <#T##String#>, totalBillAmount: <#T##Float#>)
+        
         self.providerName = providerName
         self.internetGBused = internetGBused
+        super.init(bId: bId, bDate: bDate, billType: billType, totalBillAmount: totalBillAmount)
+        
     }
-}
+    
+    override func displayData()
+    {
+        print(" Provider Name: \(providerName)")
+        print(" Internet GB used: \(internetGBused)")
+       
+    }}
