@@ -11,10 +11,16 @@ class Bill
 {
     var bId: Int
     var bDate: Date
-    var billType: String
+    enum b_Type
+    {
+        case Internet
+        case Hydro
+        case Mobile
+    }
+    var billType: b_Type
     var totalBillAmount: Float
     
-    init(bId: Int, bDate: Date, billType: String, totalBillAmount: Float)
+    init(bId: Int, bDate: Date, billType: b_Type, totalBillAmount: Float)
     {
         self.bId = bId
         self.bDate = bDate

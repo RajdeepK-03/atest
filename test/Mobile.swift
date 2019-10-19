@@ -14,8 +14,8 @@ class Mobile:Bill
     var mobileNumber: String
     var gbUsed: Float
     var minutesUsed: Float
-    
-    init(manufacturerName: String, planName: String, mobileNumber: String, gbUsed: Float, minutesUsed:Float, bId: Int, bDate: Date, billType: String, totalBillAmount: Float) {
+    var billAmount: Float
+    init(manufacturerName: String, planName: String, mobileNumber: String, gbUsed: Float, minutesUsed:Float, billAmount: Float, bId: Int, bDate: Date, billType: b_Type, totalBillAmount: Float) {
         
         
         self.manufacturerName = manufacturerName
@@ -23,7 +23,7 @@ class Mobile:Bill
         self.mobileNumber = mobileNumber
         self.gbUsed =  gbUsed
         self.minutesUsed = minutesUsed
-        
+        self.billAmount = billAmount
         super.init(bId: bId, bDate: bDate, billType: billType, totalBillAmount: totalBillAmount)
         
     }
@@ -33,6 +33,7 @@ class Mobile:Bill
         print("Mobile Number: \(mobileNumber)")
         print("GB Used: \(gbUsed)")
         print("Minutes used: \(minutesUsed)")
+        print("Bill Amount: \(billAmount)")
     }
     
     
