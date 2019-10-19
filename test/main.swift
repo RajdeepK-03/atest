@@ -26,13 +26,10 @@ var mob2 = Mobile(manufacturerName: "Samsung", planName: "Big Gig 10 GB", mobile
 
 var cust1 = Customer(customerId: "A0101", firstName: "Rajdeep", lastName: "Kaur", emailId: "rajdeep@gmail.com", dictBill: [internet1.ibid:internet1])
 
-var cust2 = Customer(customerId: "A0102", firstName: "deep", lastName: "chahal", emailId: "deep@gmail.com", dictBill: [internet2.ibid:internet2, hydro2.ibid:hydro2],
+var cust2 = Customer(customerId: "A0102", firstName: "deep", lastName: "chahal", emailId: "deep@gmail.com", dictBill: [internet2.ibid:internet2, hydro2.ibid:hydro2]
 
 
-custDictionary.updateValue(cust1, forKey: cust1.customerId)
-custDictionary.updateValue(cust2, forKey: cust2.customerId)
-    
-   
+custDictionary.updateValue(cust1, forKey: "A0101")
 
 for i in custDictionary.values
 {
