@@ -20,9 +20,19 @@ var internet2 = Internet(ibid: "sukj", providerName: "Fido", internetGBused: 12.
 
 var hydro1 = Hydro(agencyName: "Ontario Power Generation", unitsConsumed: 20, bId: 101, bDate: Date(), billType: Bill.b_Type.Hydro, totalBillAmount: 50)
 
-var mob1 = Mobile(manufacturerName: "Sony", planName: "Big Gig", mobileNumber: "9465651859", gbUsed: 12.7, minutesUsed: 300, billAmount: 25.5, bId: 201, bDate: Date(), billType:Bill.b_Type.Mobile, totalBillAmount: 30.5)
+var hydro2 = Hydro(agencyName: "Hydro One", unitsConsumed: 30, bId: 102, bDate: Date(), billType: Bill.b_Type.Hydro, totalBillAmount: 40)
+var mob1 = Mobile(manufacturerName: "Sony", planName: "Big Gig 25 GB", mobileNumber: "9465651859", gbUsed: 12.7, minutesUsed: 300, billAmount: 25.5, bId: 201, bDate: Date(), billType:Bill.b_Type.Mobile, totalBillAmount: 30.5)
+var mob2 = Mobile(manufacturerName: "Samsung", planName: "Big Gig 10 GB", mobileNumber: "9234871859", gbUsed: 22.4, minutesUsed: 200, billAmount: 28.5, bId: 202, bDate: Date(), billType:Bill.b_Type.Mobile, totalBillAmount: 35.5)
+
 var cust1 = Customer(customerId: "A0101", firstName: "Rajdeep", lastName: "Kaur", emailId: "rajdeep@gmail.com", dictBill: [internet1.ibid:internet1])
-custDictionary.updateValue(cust1, forKey: "A0101")
+
+var cust2 = Customer(customerId: "A0102", firstName: "deep", lastName: "chahal", emailId: "deep@gmail.com", dictBill: [internet2.ibid:internet2, hydro2.ibid:hydro2],
+
+
+custDictionary.updateValue(cust1, forKey: cust1.customerId)
+custDictionary.updateValue(cust2, forKey: cust2.customerId)
+    
+   
 
 for i in custDictionary.values
 {
