@@ -7,11 +7,11 @@
 //
 
 import Foundation
-class hydro: Bill
+class Hydro: Bill
 {
     var agencyName: String
-    var unitsConsumed: Int
-    init(agencyName: String, unitsConsumed: Int, bId: Int, bDate: Date, billType: b_Type, totalBillAmount: Float)
+    var unitsConsumed: Float
+    init(agencyName: String, unitsConsumed: Float, bId: Int, bDate: Date, billType: b_Type, totalBillAmount: Float)
     {
         self.agencyName = agencyName
         self.unitsConsumed = unitsConsumed

@@ -16,15 +16,15 @@ class Customer
         {
         return "\(self.firstName) \(self.lastName)"
         }
-        var email : String
+        var emailId : String
         var dictBill = Dictionary<String,Bill>()
         
-        init(customerId : String, firstName : String, lastName : String, email : String, dictBill : Dictionary<String,Bill>)
+        init(customerId : String, firstName : String, lastName : String, emailId : String, dictBill : Dictionary<String,Bill>)
         {
             self.customerId = customerId
             self.firstName = firstName
             self.lastName = lastName
-            self.email = email
+            self.emailId = emailId
             self.dictBill = dictBill
             
         }
@@ -33,6 +33,7 @@ class Customer
             print("**************************************************************")
             print("Customer Id : \(customerId)")
             print("Full Name : \(fullName)")
+            print("Email Id: \(emailId)")
             for item in dictBill.values
             {
                 item.displayData()
